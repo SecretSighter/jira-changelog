@@ -28,6 +28,12 @@ module.exports = {
     attachments: {
       collection: 'attachment',
       via: 'issue'
+    },
+
+    jiraid: {
+      type: 'STRING',
+      required: true,
+      primaryKey: true
     }
   }
 };

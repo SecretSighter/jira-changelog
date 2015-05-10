@@ -39,5 +39,11 @@ module.exports = {
 
 		}).end();
 
+	},
+
+	'all' : function(req, res){
+		Releasedoc.find().exec(function(err, allReleaseDocs){
+			res.send(allReleaseDocs);
+		});
 	}
 };
