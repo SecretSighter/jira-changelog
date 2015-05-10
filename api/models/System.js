@@ -8,6 +8,19 @@
 module.exports = {
 
   attributes: {
-    name : 'STRING'
+    name: {
+      type: 'STRING',
+      required: true
+    },
+
+    releasedocs: {
+      collection: 'releasedoc',
+      via: 'systems'
+    },
+
+    tests: {
+      collection: 'test',
+      via: 'system'
+    }
   }
 };

@@ -22,7 +22,12 @@ module.exports = {
 
     comments: {
       collection: 'comment',
-      via: 'issues'
+      via: 'issue'
+    },
+
+    attachments: {
+      collection: 'attachment',
+      via: 'issue'
     }
   }
 };
