@@ -8,7 +8,21 @@
 module.exports = {
 
   attributes: {
+    name : 'string',
+    description: 'string',
 
+    signers: {
+      collection: 'signer',
+      via: 'issues'
+    },
+
+    releasedoc: {
+      model: 'releasedoc'
+    },
+
+    comments: {
+      collection: 'comment',
+      via: 'issues'
+    }
   }
 };
-
